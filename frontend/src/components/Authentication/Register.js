@@ -4,8 +4,6 @@ import '../../styles/Authntication/auth.css';
 import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
 
-const BASE_URL = process.env.REACT_APP_BACKEND_LINK; 
-
 const Register = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -16,7 +14,7 @@ const Register = () => {
     e.preventDefault();
 
     try {
-      await axios.post(`${BASE_URL}/api/auth/register`, {
+      await axios.post(`https://task-management-system-backend-d8ea.onrender.com/api/auth/register`, {
         name,
         email,
         password,
