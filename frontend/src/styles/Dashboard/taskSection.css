@@ -1,0 +1,72 @@
+.taskSectionWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 5%;
+    margin-bottom: 70px;
+}
+
+.allTask {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px; 
+    padding: 20px;
+}
+
+.taskSectionWrapper .noTask {
+    color: white;
+    font-size: 25px;
+    font-family: var(--font-lato);
+}
+
+.taskSectionWrapper .buttons {
+    display: flex;
+}
+
+.taskSectionWrapper .newTask,
+.taskSectionWrapper .getReport {
+    background-color: var(--color-orange);
+    color: white;
+    padding: 10px 20px;
+    max-width: 500px;
+    margin: auto;
+    width: 30%;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 20px;
+    min-width: 200px;
+    font-family: var(--font-lato);
+}
+
+.taskSectionWrapper .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.taskSectionWrapper .pagination  button{
+    margin: 5px;
+    padding: 10px;
+    color: black;
+    font-family: var(--font-lato);
+    background-color: var(--color-orange);
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.taskSectionWrapper .pagination  button:first-child,
+.taskSectionWrapper .pagination  button:last-child {
+    background-color: transparent;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .taskSectionWrapper .buttons {
+        flex-direction: column;
+    }
+}

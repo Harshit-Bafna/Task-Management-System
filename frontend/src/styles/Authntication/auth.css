@@ -1,0 +1,91 @@
+.Auth {
+    background-color: var(--color-black);
+    display: flex;
+}
+
+.Auth .left {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+    width: 60%;
+}
+
+.Auth .left img {
+    object-fit: contain;
+}
+
+.Auth .right {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    overflow: hidden;
+    width: 40%;
+    margin-left: 150px;
+}
+
+.Auth .right .title {
+    color: white;
+    font-family: var(--font-montserrat);
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.Auth .right .description {
+    max-width: 270px;
+    font-size: 10px;
+    color: white;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+.Auth .right .formLabel {
+    font-family: var(--font-roboto);
+    color: white;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.Auth .right .formLabel i {
+    margin-right: 10px;
+}
+
+.Auth .right .formInput {
+    margin-bottom: 20px;
+    padding: 12px 20px;
+    border-radius: 100px;
+    width: 270px;
+    outline: none;
+    border: none;
+    opacity: 0.9;
+}
+
+.Auth .right .redirect {
+    color: white;
+    display: block;
+    margin-top: 5px;
+    opacity: 0.9;
+}
+
+.Auth .right .redirect a{
+    color: var(--color-orange);
+}
+
+.Auth .right .authSubmit {
+    background-color: var(--color-orange);
+    color: white;
+    font-size: 18px;
+    font-family: var(--font-roboto);
+    padding: 10px 20px;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    margin-top: 20px;
+}

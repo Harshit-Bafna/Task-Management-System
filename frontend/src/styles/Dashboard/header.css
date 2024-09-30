@@ -1,0 +1,22 @@
+.header {
+    text-align: center;
+    padding: 50px 20% 0px;
+}
+
+.header .heading {
+    color: var(--color-orange);
+    font-size: 25px;
+    font-weight: 600;
+    font-family: var(--font-poppins);
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}
+
+.header .description {
+    margin-top: 10px;
+    color: white;
+    font-family: var(--font-montserrat);
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
